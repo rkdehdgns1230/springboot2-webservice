@@ -35,6 +35,5 @@ public class Posts extends BaseTimeEntity {
     public void update(PostsUpdateRequestDto requestDto){
         this.title = requestDto.getTitle();
         this.content = requestDto.getContent();
-        this.author = requestDto.getAuthor();
     }
 }

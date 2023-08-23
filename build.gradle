@@ -37,7 +37,8 @@ dependencies {
     implementation 'org.springframework.session:spring-session-jdbc'
 
     implementation 'com.h2database:h2'
-    implementation 'com.mariadb.jdbc:mariadb-java-client'
+//    implementation 'com.mariadb.jdbc:mariadb-java-client'
+    implementation 'mysql:mysql-connector-java'
     implementation 'org.springframework.boot:spring-boot-starter-mustache'
 
     testImplementation 'org.springframework.boot:spring-boot-starter-test'

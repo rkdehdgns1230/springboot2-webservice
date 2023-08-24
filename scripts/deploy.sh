@@ -31,8 +31,8 @@ chmod +x $JAR_NAME # 실행 권한 추가
 
 echo "> $JAR_NAME 실행"
 
-nohup java -jar \
--Dspring.config.location=classpath:/application.yml, classpath:/application-real.yml, /home/ec2-user/app/application-oauth.yml, /home/ec2-user/app/application-real-db.yml \
--Dspring.profiles.active=real \
-$JAR_NAME > $REPOSITORY/nohup.out 2>&1 &
 # nohup 실행 시 CodeDeploy는 무한 대기 -> 이 문제를 해결하기 위해 nohup.out 파일을 표준 입출력용으로 별도로 사용 (이렇게 하면 nohup.out 파일이 별도로 생성되지 않고, CodeDeploy 로그에 표준 입출력이 출력된다고 한다.)
+nohup java -jar \
+    -Dspring.config.location=classpath:/application.yml,classpath:/application-real.yml,/home/ec2-user/app/application-oauth.yml,/home/ec2-user/app/application-real-db.yml \
+    -Dspring.profiles.active=real \
+    $JAR_NAME > $REPOSITORY/nohup.out 2>&1 &

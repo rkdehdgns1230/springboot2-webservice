@@ -5,6 +5,7 @@
 <img src = "https://github.com/rkdehdgns1230/springboot2-webservice/assets/68600592/a075c9dc-2870-45e2-af30-b429303f7843" width="50%" height="50%">
 
 ## 프로젝트 구조
+![image](https://github.com/rkdehdgns1230/springboot2-webservice/assets/68600592/bbd02360-979e-45c3-aab1-972d65d28015)
 
 
 ## 다음과 같은 기술 및 주제를 다룰 수 있었습니다.
